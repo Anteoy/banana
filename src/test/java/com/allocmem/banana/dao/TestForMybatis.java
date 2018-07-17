@@ -19,7 +19,6 @@ public class TestForMybatis {
         User user = userMapper.findUserById(1);
         System.out.println(user);
         System.out.println(user.getName());
-
     }
     @Test
     public void testMultiMapper(){
