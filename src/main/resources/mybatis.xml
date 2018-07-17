@@ -7,6 +7,6 @@
     <!-- 使用相对于类路径的资源引用 -->
     <!--这些配置会告诉了 MyBatis 去哪里找映射文件 sql xml-->
     <!--<mappers>-->
-        <!--<mapper resource="com/allocmem/banana/dao/UserMapper.xml"/>-->
+    <!--<mapper resource="com/allocmem/banana/dao/UserMapper.xml"/>-->
     <!--</mappers>-->
 </configuration>

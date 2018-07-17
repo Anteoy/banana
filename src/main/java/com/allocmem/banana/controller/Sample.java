@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class Sample {
-    @ResponseBody
-    @RequestMapping(value = "/sample",method = RequestMethod.GET)
-    public JSONObject clearMixedPushInRedis(String uid) {
-       return JSONObject.parseObject("{\"a\":\"b\"}");
-    }
+  @ResponseBody
+  @RequestMapping(value = "/sample", method = RequestMethod.GET)
+  public JSONObject clearMixedPushInRedis(String uid) {
+    return JSONObject.parseObject("{\"a\":\"b\"}");
+  }
 }

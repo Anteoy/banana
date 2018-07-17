@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 @Component("test_component")
 public class Saying {
-    public void saying () {
-        System.out.println("from class Saying exec saying()...");
-    }
+  public void saying() {
+    System.out.println("from class Saying exec saying()...");
+  }
 }

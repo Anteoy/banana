@@ -8,5 +8,5 @@ import com.allocmem.banana.model.User;
  * @description
  */
 public interface UserMapper {
-    User findUserById(int id);
+  User findUserById(int id);
 }
