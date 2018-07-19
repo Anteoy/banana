@@ -19,12 +19,13 @@
 
     <!--ViewResolver 视图解析器-->
     <!--用于支持Servlet、JSP视图解析-->
-    <bean id="jspViewResolver"
-          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/WEB-INF/views/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+    <!--使用velocity代替jsp 则需要注释掉此配置-->
+    <!--<bean id="jspViewResolver"-->
+          <!--class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
+        <!--<property name="prefix" value="/WEB-INF/views/"/>-->
+        <!--<property name="suffix" value=".jsp"/>-->
+    <!--</bean>-->
 
 
     <mvc:annotation-driven>
@@ -41,5 +42,17 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+
+
+    <!-- 视图模式配置,velocity配置文件开始 -->
+    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath" value="/WEB-INF/vm"/>
+        <property name="configLocation" value="classpath:velocity.properties"/>
+    </bean>
+    <bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+        <property name="suffix" value=".vm"/>
+    </bean>
+    <!-- 视图模式配置,velocity配置文件结束 -->
 
 </beans>

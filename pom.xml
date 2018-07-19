@@ -26,6 +26,20 @@
 
 
   <dependencies>
+
+    <!-- Velocity模板 -->
+
+    <dependency>
+      <groupId>org.apache.velocity</groupId>
+      <artifactId>velocity</artifactId>
+      <version>1.7</version>
+    </dependency>
+    <dependency>
+      <groupId>velocity-tools</groupId>
+      <artifactId>velocity-tools-generic</artifactId>
+      <version>2.0</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -59,6 +73,17 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
       <version>4.3.12.RELEASE</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.3.1.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>4.3.1.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.aspectj</groupId>
@@ -140,6 +165,7 @@
         <directory>src/main/resources</directory>
         <includes>
           <include>**/*.xml</include>
+          <include>**/*.properties</include>
         </includes>
       </resource>
       <resource>
