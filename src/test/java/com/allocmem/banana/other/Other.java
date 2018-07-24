@@ -1,6 +1,7 @@
 package com.allocmem.banana.other;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @auther zhoudazhuang
@@ -13,9 +14,11 @@ public class Other {
         }
 }
 class Test {
-    final Logger LOGGER = Logger.getLogger(Test.class);
+//    import org.apache.log4j.Logger;
+//    final Logger LOGGER = Logger.getLogger(Test.class);
+    final Logger LOGGER = LoggerFactory.getLogger(Test.class);
     public void test() {
-        LOGGER.info("hello this is log4j info log");
-        LOGGER.debug("hello this is log4j debug log");
+        LOGGER.info("hello this is slf4j/log4j info log");
+        LOGGER.debug("hello this is slf4j/log4j debug log");
     }
 }

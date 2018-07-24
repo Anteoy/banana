@@ -158,10 +158,21 @@
       <version>4.2.4.RELEASE</version>
     </dependency>
 
+    <!--<dependency>-->
+      <!--<groupId>log4j</groupId>-->
+      <!--<artifactId>log4j</artifactId>-->
+      <!--<version>1.2.17</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>slf4j-api</artifactId>-->
+      <!--<version>1.7.21</version>-->
+    <!--</dependency>-->
+    <!--slf4j-log4j12这个包肯定依赖了slf4j和log4j，所以使用slf4j+log4j的组合只要配置上面这一个依赖就够了-->
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.17</version>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.21</version>
     </dependency>
   </dependencies>
 
