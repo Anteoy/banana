@@ -27,8 +27,8 @@ public class Sample {
 
   @RequestMapping({"/velocity_sample" })
   public ModelAndView test(HttpServletRequest request) {
-    LOGGER.info("hello this is slf4j/log4j info log");
-    LOGGER.debug("hello this is slf4j/log4j debug log");
+    LOGGER.info("hello this is slf4j info log");
+    LOGGER.debug("hello this is slf4j debug log");
     ModelAndView mv =new ModelAndView();
     mv.addObject("key","hello,velocity！");
     mv.setViewName("velocity_sample");

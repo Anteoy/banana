@@ -18,7 +18,7 @@ class Test {
 //    final Logger LOGGER = Logger.getLogger(Test.class);
     final Logger LOGGER = LoggerFactory.getLogger(Test.class);
     public void test() {
-        LOGGER.info("hello this is slf4j/log4j info log");
-        LOGGER.debug("hello this is slf4j/log4j debug log");
+        LOGGER.info("hello this is slf4j info log");
+        LOGGER.debug("hello this is slf4j debug log");
     }
 }
